@@ -19,13 +19,14 @@
       class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center"
     >
       <!-- home page -->
-      <section class="home flex justify-center min-h-screen ">
+      <section id="home-screen" class="flex justify-center min-h-screen">
         <div class="flex flex-col items-center justify-center space-y-10">
           <h1 class="font-anton text-9xl text-white">ALPHABET CLASH PRO</h1>
           <p class="font-poppins text-xl text-white">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
           <button
+            onclick="play()"
             class="btn bg-white text-black hover:text-white hover:border-white"
           >
             Play Now
@@ -34,7 +35,7 @@
       </section>
       <!-- home page end -->
       <!-- play-ground end -->
-      <section class="play-ground flex justify-center pt-10 hidden">
+      <section id="play-ground" class=" flex justify-center pt-10 hidden">
         <div>
           <!-- screen -->
           <div>
@@ -124,5 +125,7 @@
         </div>
       </section>
     </main>
+    <script src="script/alpha-clash.js"></script>
+    <script src="script/utility.js"></script>
   </body>
 </html>
